@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--------------header------------------>
+    <header class="header">
+        <section class="flex">
+            <div id="menu-btn" class="fa-solid fa-bars-staggered"></div>
+            <a href="home.html" class="logo"><i class="fa-solid fa-briefcase"></i>JobHunt.</a>
+
+            <nav class="navbar">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="jobs.html">All jobs</a>
+                <a href="contact.html">Contact us</a>
+                <a href="login.html">account</a>
+                <a href="register.html">Register</a>
+            </nav>
+
+            <a href="#" class="btn" style="margin-top:0;">post job</a>
+        </section>
+
+        <!-- </header> -->
+        <!-- header section end-------->
+
+        <!-- home section start --------------->
+
+        <div class="home-container">
+            <section class="home">
+                <form action="" method="post" id="searchForm">
+                    <h3>find you next job.</h3>
+                    <p>job title<span>*</span></p>
+                    <input type="text" name="title" placeholder="keyward, categort or compony" required maxlength="'20"
+                        class="input" id="title">
+                    <p>job location</p>
+                    <input type="text" name="title" placeholder="city, state or country" required maxlength="'50"
+                        class="input" id="location">
+                    <input type="submit" value="search job" name="search" class="btn">
+                </form>
+                <!-- chatgpt -->
+                <div id="results"></div>
+                <!--  -->
+            </section>
+        </div>
+
+        <!-- home section ends --------------->
+
+        <!-- category section start --------------->
+
+        <section class="category">
+            <h1 class="heading">job categories</h1>
+            <div class="box-container">
+                <a href="#" class="box">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <h3>development</h3><span>
+                            300 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <div>
+                        <h3>Designer</h3><span>
+                            150 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-person-chalkboard"></i>
+                    <div>
+                        <h3>Techer</h3><span>
+                            1200 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <div>
+                        <h3>marketing</h3><span>
+                            1500 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-gear"></i>
+                    <div>
+                        <h3>service</h3><span>
+                            200 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-wrench"></i>
+                    <div>
+                        <h3>Engineer</h3><span>
+                            250 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-landmark"></i>
+                    <div>
+                        <h3>Finance</h3><span>
+                            200 jobs.
+                        </span>
+                    </div>
+                </a>
+                <a href="#" class="box">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>Freelancig</h3><span>
+                            200 jobs.
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- category section ends --------------->
+
+        <!-- jobs section start --------------->
+
+        <section class="jobs-container">
+
+            <h1 class="heading"> latest jobs</h1>
+
+            <div class="box-container">
+
+                <div class="box" id="job1">
+                    <div class="company">
+                        <img src="image/logo-1.png" alt="">
+                        <div>
+                            <h3>IT Infosys co.</h3>
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+                    <h3 class="job-title" id="title">senior web devloper</h3>
+                    <p class="location" id="location"><i class="fas fa-map-marker-alt"></i>
+                        <span>mumbai, india</span>
+                    </p>
+                    <div class="tags">
+                        <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                        <p><i class="fas fa-clock"></i><span>day shift</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_job.html" class="btn">view details</a>
+                        <button type="submit" class="far fa-heart" name="save"></button>
+                    </div>
+                </div>
+                <div class="box" id="job2">
+                    <div class="company">
+                        <img src="image/logo-2.png" alt="">
+                        <div>
+                            <h3>Worko.ai</h3>
+                            <p>12 days ago</p>
+                        </div>
+                    </div>
+                    <h3 class="job-title" id="title">php devloper</h3>
+                    <p class="location" id="location"><i class="fas fa-map-marker-alt"></i>
+                        <span>bangluru, india</span>
+                    </p>
+                    <div class="tags">
+                        <p><i class="fas fa-indian-rupee-sign"></i><span>20k - 30k</span></p>
+                        <p><i class="fas fa-clock"></i><span>day shift</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_job.html" class="btn">view details</a>
+                        <button class="far fa-heart"></button>
+                    </div>
+                </div>
+                <div class="box" id="job3">
+                    <div class="company">
+                        <img src="image/logo-3.png" alt="">
+                        <div>
+                            <h3>wellfounded IT Solution pvt ltd.</h3>
+                            <p>19 days ago</p>
+                        </div>
+                    </div>
+                    <h3 class="job-title" id="title">senior react devlopment</h3>
+                    <p class="location" id="location"><i class="fas fa-map-marker-alt"></i>
+                        <span>jabalpur,indore,india</span>
+                    </p>
+                    <div class="tags">
+                        <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                        <p><i class="fas fa-clock"></i><span>day shift</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_job.html" class="btn">view details</a>
+                        <button class="far fa-heart"></button>
+                    </div>
+                </div>
+                <div class="box" id="job4">
+                    <div class="company">
+                        <img src="image/logo-4.png" alt="">
+                        <div>
+                            <h3>IT world</h3>
+                            <p>20 days ago</p>
+                        </div>
+                    </div>
+                    <h3 class="job-title" id="title">front-end development</h3>
+                    <p class="location" id="location"><i class="fas fa-map-marker-alt"></i>
+                        <span>mumbai, india</span>
+                    </p>
+                    <div class="tags">
+                        <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                        <p><i class="fas fa-clock"></i><span>day shift</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_job.html" class="btn">view details</a>
+                        <button class="far fa-heart"></button>
+                    </div>
+                </div>
+                <div class="box" id="job5">
+                    <div class="company">
+                        <img src="image/logo-5.png" alt="">
+                        <div>
+                            <h3>zemoso technologies</h3>
+                            <p>25 days ago</p>
+                        </div>
+                    </div>
+                    <h3 class="job-title" id="title">java backend devloper</h3>
+                    <p class="location" id="location"><i class="fas fa-map-marker-alt"></i>
+                        <span>mumbai, india</span>
+                    </p>
+                    <div class="tags">
+                        <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                        <p><i class="fas fa-clock"></i><span>day shift</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_job.html" class="btn">view details</a>
+                        <button class="far fa-heart"></button>
+                    </div>
+                </div>
+                <div class="box" id="job6">
+                    <div class="company">
+                        <img src="image/logo-6.png" alt="">
+                        <div>
+                            <h3>oyeLabs.</h3>
+                            <p>6 days ago</p>
+                        </div>
+                    </div>
+                    <h3 class="job-title" id="title">flutter development</h3>
+                    <p class="location" id="location"><i class="fas fa-map-marker-alt"></i>
+                        <span>mumbai, india</span>
+                    </p>
+                    <div class="tags">
+                        <p><i class="fas fa-indian-rupee-sign"></i><span>20k - 25k</span></p>
+                        <p><i class="fas fa-clock"></i><span>night shift</span></p>
+                    </div>
+                    <div class="flex-btn">
+                        <a href="view_job.html" class="btn">view details</a>
+                        <button class="far fa-heart"></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style=" text-align:center; align-items: center; margin-top: 2rem;"></div>
+            <a href="jobs.html" class="btn">view all</a>
+        </section>
+    </header>
+    <!-- job section ends --------------->
+
+
+    <!-- footer section -------->
+
+    <footer class="footer">
+        <section class="grid">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+                <a href="about.html"><i class="fa-solid fa-angle-right"></i>about</a>
+                <a href="jobs.html"><i class="fa-solid fa-angle-right"></i>all jobs</a>
+                <a href="contact.html"><i class="fa-solid fa-angle-right"></i>contact</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i> filter search</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>account</a>
+                <a href="login.html"><i class="fa-solid fa-angle-right"></i>login</a>
+                <a href="register.html"><i class="fa-solid fa-angle-right"></i>register</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>post job</a>
+                <a href="#"><i class="fa-solid fa-angle-right"></i>dashboard</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+            </div>
+        </section>
+
+        <div class="credit">
+            &copy;copyright @2024 by <span>Nidhi kumrawat</span> || all right reserved!
+        </div>
+    </footer>
+
+    <!-- footer section finish-->
+
+
+    <script src="script.js">
+
+
+
+
+        // function search() {
+        //     let filter = document.getElementById('searchForm').value.toUpperCase();
+        //     let jobs = document.querySelectorAll('.jobs-container .box');
+
+        //     let t = document.getElementsByTagName('h3');
+        //     let l = document.getElementsByTagName('p');
+
+        //     for (let i = 0; i <= t.length; i++) {
+        //         let a = item[i].getElementsByTagName('h3', 'p')[0];
+        //         let value = a[i].textContent || a[i].innerText || a[i].innerHTML;
+
+        //         if (value.toUpperCase().indexOf(filter) > -1) {
+        //             item[i].style.display = "";
+        //             console.log("hello");
+        //         } else {
+        //             item[i].style.display = "none";
+        //         }
+        //     }
+
+        // }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            //get the input value
+            var titleinput = document.getElementById('title').value.toLowerCase();
+            var locationinput = document.getElementById('location').value.toLowerCase();
+
+            //get all job boxes
+            var jobBoxes = document.querySelectorAll('.jobs-container .box');
+
+            jobBoxes.forEach(function (box) {
+                var jobTitle = box.querySelector('.job-title').textContent.toLowerCase();
+                var jobLocation = box.querySelector('.location span').textContent.toLowerCase();
+
+                // check if the job title and location match 
+                if (jobTitle.includes(titleinput) && jobLocation.includes(locationinput)) {
+                    box.style.display = 'block';  //show the job box
+                } else {
+                    box.style.display = 'none';  //hide the job box
+                }
+
+            });
+        }); </script>-->
+
+
+</body>
+
+</html>
